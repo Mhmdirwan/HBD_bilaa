@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="png-clipart-color-birthday-cake-color-birthday.png"> 
+  <link rel="apple-touch-icon" href="png-clipart-color-birthday-cake-color-birthday.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>HBD Bilaaa</title>
+</head>
+<body>
+	
+   <div class="overlay">
+     <!-- Teks Loading --><div class="loading-message">Hai Sayang!<br>Tunggu dulu ya..</div>
+   </div>
+   
+   <!-- Ganti Audio di Sini, edit url di dalam src -->
+   <audio loop src="jamrud-selamat ulang tahun.mp3" id="linkmp3" class="sembunyi"></audio>
+
+   
+   <!-- Pesan Pertama -->
+   <section class="first">
+       <!-- Background --><div class="wp"><img id="imgsatu" src="https://img.inews.co.id/media/450/files/inews_new/2022/02/05/lagu_yang_cocok_untuk_ulang_tahun.jpg"/></div>
+       <!-- Stiker --><img id="first_stiker" class="stiker fade-in" src="bunga.gif"/>
+       
+       <h1 class="title">Happy Birthday🎂</h1>
+       <p class="flip">SELAMAT ULANG TAHUN BILA SAYANG</p>
+       <p class="slide-up">Udah gede ya hehe :v</p>
+  </section>
+  
+  <!-- Pesan Kedua -->
+  <section>
+      <!-- Background --><div class="wp"><img id="imgdua" src="https://asset-2.tstatic.net/kaltara/foto/bank/images/ucapan-ulang-tahun-bahasa-melayu.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="pusn.gif"/>
+      
+      <h2 class="title">Happy Birthday🎉</h2>
+      <p class="slide-right">"Semoga panjang umur, sehat selalu, dan selalu tetep sama akuu ya hehe :v"</p>
+  </section>
+  
+  <!-- Pesan Ketiga dengan Animasi Ngetik -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgtiga" src="https://eswpcd25uod.exactdn.com/blog/wp-content/uploads/2018/10/kartu-ucapan-ulang-tahun-01.jpg?strip=all&lossy=1&ssl=1"/></div>
+      <p id="teksnimasi">Maafin aku ya kemaren, ribut dikit gapapa ya hehe :v</p>
+
+
+  </section>
+    <!-- Pesan Keempat dengan Pertanyaan -->
+    <section>
+      <!-- Background --><div class="wp"><img id="imgempat" src="https://awsimages.detik.net.id/community/media/visual/2019/04/08/5e428d6a-ef78-4670-b524-593799d0e967.jpeg?w=600&q=90"/></div>
+        <!-- Stiker --><img class="stiker fade-in" src="bunga.gif"/>
+        
+        <h2 class="title">Kado</h2>
+        <p class="bold slide-right"></p>
+        
+        <div id="Tombol">
+         <a id="By" onClick="fungsipertama()">Mau</a>
+         <a id="Bn" onClick="fungsikedua()">Gamau</a>
+       </div>
+    </section>
+    
+    <!-- Pesan Akhir, edit di paling bawah di dalam Script -->
+    <section id="iniakhir">
+      <!-- Background --><div class="wp" id="wpakhir"><img src="https://img.freepik.com/premium-vector/heart-love-alphabet-seamless-pattern-background-vector-bg_191755-97.jpg"/></div>
+        <!-- Stiker --><img id="stikerakhir" class="stiker fade-in" src="g5.gif"/>
+        
+        <img id="stikerakhir2" style="display:none" src="emawh.gif"/>
+        <h1 id="judulakhir"></h1>
+        <p id="kalimatakhir"></p>
+        <p id="palingakhir"></p>
+        <div id="TombolWA">
+          <a onClick="menuju()">Balas</a>
+        </div>
+        
+
+    </section>
+  
+ 
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+  <script>
+    // Teks ketika klik tombol Mau
+    function fungsipertama(){
+           fungsi=0;tes();
+           teksjudulakhir = "Terimakasih sudah mau";
+           tekskalimatakhir = "";
+    }
+    
+    // Teks ketika klik tombol Gamau
+    function fungsikedua(){
+           fungsi=0;tes();
+           teksjudulakhir = "pokoknya harus mau!";
+           tekskalimatakhir = "";
+    }
+    
+    // Teks Akhir
+    teksjudulakhir2 = "Love u ❤";
+    tekspalingakhir = "";
+      
+    // Teks yang akan dikirim ke WhatsApp
+    pesanwhatsapp = "Mas irwan ganteng, lucu, imut, kado source code nya❤";
+
+const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="main.js"></script>
+</body>
+</html>
